@@ -1,19 +1,54 @@
+.header-menu {
+    display: flex;
+    background: #e4e8eb;
+    padding: 5px 16px;
+    gap: 16px;
+    align-items: center;
+
+    box-shadow: 1px 2px 9px rgba(0, 0, 0, 0.25);
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.header-menu ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.header-menu ul li a:hover {
+    color: #d81e1f;
+}
+
+.header-menu .logo {
+    height: 80px;
+    width: auto;
+    border-radius: 5px;
+}
+
 .card{
     width:250px ;
-    height: 300px;
     
 }
 .card img{
     width: 250px;
     height: 200px;
 }
-.header-menu{
-    background-color:rgb(25, 25, 25);}
 .info-block{
     background-color:rgb(25, 25, 25);}
 
 .product-container{
-    background-color:rgb(25, 25, 25);}
-    .main-content{
-        background-color:rgb(25, 25, 25);}
+    background-color:#e4e8eb;}
+.main-content{
+    background-color:#e4e8eb;}
+
+.main-content .page-title {
+    font-size: 44px;
+    text-align: center;
+    margin: 55px 0 75px;
+}
         

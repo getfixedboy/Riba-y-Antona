@@ -23,7 +23,10 @@ function createCard(product) {
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
         <p>${product.description}</p>
-        <div class="price">${product.price}</div>
+        <div class="footer">
+            <div class="price">${product.price}</div>
+            <button>У кошик</button>
+        </div>
     `;
 
     return card
