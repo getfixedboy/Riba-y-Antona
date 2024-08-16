@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://gist.githubusercontent.com/getfixedboy/ec3b5c1810a229ae906f67c694bf9d17/raw/1cf4910ef40ccbefb6c87f56e3015dff5e0ea125/Products.json')
+    fetch('https://gist.githubusercontent.com/aleksandr-bash/ca203cc8adda2ac6f8c19fa35a626686/raw/ed11a04984de068801fe5090d66b2b6a0fe48994/sushi.json')
         .then(response => response.json())
         .then(data => {
             const products = data.products;
@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 container.appendChild(card);
             }
         })
-        .catch(error => console.error('Error loading products:', error));
+        .catch(error => console.error('Error loading products:', error))
+        .finally(() => {document.dispatchEvent(new Event('productsLoaded'));});
 });
 
 
@@ -25,7 +26,7 @@ function createCard(product) {
         <p>${product.description}</p>
         <div class="footer">
             <div class="price">${product.price}</div>
-            <button>У кошик</button>
+            <button class="buy-button" data-product="${product.name}" data-price="${product.price}">У кошик</button>
         </div>
     `;
 

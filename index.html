@@ -3,12 +3,14 @@
         <title>Риба у Антона</title>
         <link rel="stylesheet" href="src/css/main.css" />
         <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/css/sidemenu.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <script src="src/js/main.js"></script>
+        <script src="src/js/cart.js"></script>
         <div class="header-menu">
             <!-- <p class="logo"></p> -->
             <img src="src/images/logo.jpg" alt="logo" class="logo">
@@ -17,11 +19,24 @@
                 <li><a href="#">Новини та акції</a></li>
                 <li><a href="#">Відгуки</a></li>
             </ul>
+            <button id="cart-button">Корзина</button>
         </div>
         <div class="main-content">
             <h1 class="page-title">Риба у Антона
             </h1>
             <div id="product-container"></div>
         </div>
+
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-content" id="sidebar-content">
+                <h2>Ваша корзина</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Разом: 0 грн.</p>
+
+                <a href="checkout.html" id="checkout-button" class="checkout-button">Оформити замовлення</a>
+            </div>
+        </div>
+
+        <div id="overlay"></div>
     </body>
 </html>

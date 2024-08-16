@@ -30,6 +30,23 @@
     border-radius: 5px;
 }
 
+.header-menu #cart-button {
+    margin: 0 60px 0 auto ;
+    border: 2px solid #d81e1f;
+    color: #d81e1f;
+    font-size: 16px;
+    font-weight: 600;
+    background: transparent;
+    border-radius: 16px;
+    padding: 10px 12px;
+    transition: all .1s ease-in;
+}
+
+.header-menu #cart-button:hover {
+    cursor: pointer;
+    background: #d81e1e25;
+}
+
 .card{
     width:250px ;
     

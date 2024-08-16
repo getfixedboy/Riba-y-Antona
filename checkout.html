@@ -1,0 +1,53 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+
+    <link rel="stylesheet" href="src/css/main.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/checkout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-menu">
+        <!-- <p class="logo"></p> -->
+        <img src="src/images/logo.jpg" alt="logo" class="logo">
+        <ul>
+            <li><a href="/index.html">Головна</a></li>
+            <li><a href="#">Новини та акції</a></li>
+            <li><a href="#">Відгуки</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h1 class="page-title">Оформлення замовлення</h1>
+        <div class="checkout-content">
+            <div class="checkout-items">
+                <h2>Ваші покупки</h2>
+                <ul id="cart-items"></ul>
+                <p id="total-price">Разом: 0 грн</p>
+            </div>
+    
+            <div class="checkout-form">
+                <h2>Дані для доставки</h2>
+                <form id="checkout-form">
+                    <label for="name">Ім'я:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+    
+                    <label for="phone">Номер телефону:</label><br>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+    
+                    <label for="address">Адреса доставки:</label><br>
+                    <textarea id="address" name="address" required></textarea><br><br>
+    
+                    <button type="submit">Оформити замовлення</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/checkout.js"></script>
+</body>
+</html>
