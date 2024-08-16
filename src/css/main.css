@@ -1,0 +1,19 @@
+.card{
+    width:250px ;
+    height: 300px;
+    
+}
+.card img{
+    width: 250px;
+    height: 200px;
+}
+.header-menu{
+    background-color:rgb(25, 25, 25);}
+.info-block{
+    background-color:rgb(25, 25, 25);}
+
+.product-container{
+    background-color:rgb(25, 25, 25);}
+    .main-content{
+        background-color:rgb(25, 25, 25);}
+        

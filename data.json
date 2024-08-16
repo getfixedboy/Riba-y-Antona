@@ -1,0 +1,32 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Набір Сяке Унагі",
+            "description": "787г",
+            "price":"1 170грн" ,
+            "image": "src/images/Сяке Унагі.webp"
+        },
+        {
+            "id": 2,
+            "name": "Набір Запечених інарі під сирним соусом",
+            "description": "410г",
+            "price":"650грн" ,  
+            "image":"src/image/Запечених інарі під сирним соусом.webp"
+        }
+        {
+            "id": 3,
+            "name": "Набір Гейша",
+            "description": "1,890г ",
+            "price":"2 050грн" ,
+            "image": "src/images/Гейша.webp"
+        },
+        {
+            "id": 4,
+            "name": "Набір Сумо",
+            "description": "1,920г ",
+            "price": "1 990грн",
+            "image": "src/images/Сумо.webp"
+        },
+    ]
+}
